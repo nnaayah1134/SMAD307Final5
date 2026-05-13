@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConnectHub | Find Your Community</title>
+
+  <!--
+  AI Use Disclosure:
+  Tool(s): ChatGPT
+  Purpose: Helped generate layout ideas, responsive sections, Bootstrap components, and CSS styling suggestions.
+  Human Role: I selected the final structure, edited content, adjusted styling choices, and tested responsiveness manually.
+  -->
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="Project5Final.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">ConnectHub</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#events">Events</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#mobile">Mobile Design</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#signup">Join</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+
+  <header class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="display-4 fw-bold">
+            Build Real Connections In Your Area
+          </h1>
+
+          <p class="lead mt-3">
+            ConnectHub helps students and young adults discover nearby clubs,
+            volunteer opportunities, networking events, and social communities.
+          </p>
+
+          <a href="#signup" class="btn btn-dark btn-lg mt-3">
+            Get Started
+          </a>
+        </div>
+
+        <div class="col-lg-6 text-center mt-5 mt-lg-0">
+          <img
+            src="studentstalking.jpg"
+            alt="Students talking together at an event"
+            class="img-fluid hero-image"
+          >
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+
+  <section id="features" class="py-5">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Why Users Need This App</h2>
+        <p class="text-muted">
+          Designed for students who struggle to find communities,
+          events, and organizations that match their interests.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <h3 class="h4">Smart Matching</h3>
+
+            <p>
+              Users receive recommendations based on interests,
+              location, career goals, and hobbies.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <h3 class="h4">Event Discovery</h3>
+
+            <p>
+              Quickly browse networking events, volunteering opportunities,
+              and social meetups happening nearby.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-card h-100">
+            <h3 class="h4">Easy Navigation</h3>
+
+            <p>
+              Mobile-first layouts make it easier for users to take action
+              without feeling overwhelmed.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+
+  <section id="events" class="events-section py-5">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+        <h2 class="fw-bold mb-0">Featured Opportunities</h2>
+
+        <p class="text-muted mb-0">
+          Responsive Bootstrap cards designed for multiple screen sizes.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <div class="card border-0 shadow-sm h-100">
+
+            <img
+              src="businesstalk.jpg"
+              class="card-img-top"
+              alt="Students networking together"
+            >
+
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">
+                Student Networking Mixer
+              </h3>
+
+              <p class="card-text">
+                Meet students, alumni, and professionals while building
+                meaningful career connections.
+              </p>
+
+              <a href="#" class="btn btn-outline-dark mt-auto">
+                View Event
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <div class="card border-0 shadow-sm h-100">
+
+            <img
+              src="volunteer.jpg"
+              class="card-img-top"
+              alt="Volunteer team helping community"
+            >
+
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">
+                Community Volunteer Day
+              </h3>
+
+              <p class="card-text">
+                Join local organizations focused on food drives,
+                tutoring, and neighborhood support.
+              </p>
+
+              <a href="#" class="btn btn-outline-dark mt-auto">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+          <div class="card border-0 shadow-sm h-100">
+
+            <img
+              src="fitness.jpg"
+              class="card-img-top"
+              alt="Fitness club outdoors"
+            >
+
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">
+                Wellness & Fitness Group
+              </h3>
+
+              <p class="card-text">
+                Connect with students interested in wellness,
+                outdoor walks, and group fitness activities.
+              </p>
+
+              <a href="#" class="btn btn-outline-dark mt-auto">
+                Join Group
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile UX -->
+
+  <section id="mobile" class="py-5">
+    <div class="container">
+
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-6">
+          <img
+            src="phone.jpg"
+            alt="Mobile app interface"
+            class="img-fluid rounded-4 shadow"
+          >
+        </div>
+
+        <div class="col-lg-6">
+          <h2 class="fw-bold">
+            Designed For Mobile-First Users
+          </h2>
+
+          <p class="mt-3">
+            Many college students primarily browse on their phones,
+            so this prototype prioritizes simple navigation,
+            readable layouts, and quick access to important actions.
+          </p>
+
+          <ul class="mobile-list">
+            <li>Large buttons for easier tapping</li>
+            <li>Clear visual hierarchy</li>
+            <li>Responsive Bootstrap grid system</li>
+            <li>Reduced clutter on smaller screens</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Signup -->
+
+  <section id="signup" class="signup-section py-5">
+    <div class="container">
+
+      <div class="row justify-content-center">
+
+        <div class="col-lg-7">
+
+          <div class="signup-box shadow">
+
+            <h2 class="fw-bold text-center">
+              Join ConnectHub
+            </h2>
+
+            <p class="text-center text-muted mb-4">
+              Start exploring organizations and communities near you.
+            </p>
+
+            <form>
+
+              <div class="mb-3">
+                <label for="fullname" class="form-label">
+                  Full Name
+                </label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullname"
+                >
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">
+                  Email Address
+                </label>
+
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                >
+              </div>
+
+              <div class="mb-3">
+                <label for="interest" class="form-label">
+                  Main Interest
+                </label>
+
+                <select class="form-select" id="interest">
+                  <option>Choose one</option>
+                  <option>Networking</option>
+                  <option>Volunteering</option>
+                  <option>Fitness</option>
+                  <option>Creative Arts</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-dark w-100">
+                Create Account
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="text-center py-4">
+    <div class="container">
+      <p class="mb-1 fw-semibold">
+        UX Final Project Prototype
+      </p>
+
+      <p class="small text-muted mb-0">
+        Built using HTML, CSS, Bootstrap, and responsive design principles.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
